@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    const myObject = { message: "Hello, world!" };
+    // Correctly setting innerHTML using string conversion
+    document.getElementById("myDiv").innerHTML = JSON.stringify(myObject); 
+    //Alternatively
+    //document.getElementById("myDiv").textContent = myObject.message;   
+  </script>
+</body>
+</html>
