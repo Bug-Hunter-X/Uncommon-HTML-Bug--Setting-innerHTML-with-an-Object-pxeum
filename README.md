@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon bug in HTML involving the use of innerHTML.  The bug occurs when attempting to set the innerHTML property of an element to a JavaScript object instead of a string.  This leads to unexpected behavior, as the browser cannot directly render an object as HTML content. The solution shows the correct way to handle this situation.
